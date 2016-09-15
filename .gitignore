@@ -1,0 +1,4 @@
+# exclude everything except the Ruby script and the README
+*
+!getFlickrGeoTags.rb
+!README.md
