@@ -40,7 +40,7 @@ opts.each do |opt, arg|
   case opt
     when "--help"
       printUsage($PROGRAM_NAME)
-      exit
+      exit(0)
     when "--api-key"
       # set the API key
       FlickRaw.api_key = arg
@@ -55,7 +55,7 @@ opts.each do |opt, arg|
       flickr.access_secret = arg
   end
 end
-rescue Exception
+rescue StandardError
   printUsage($PROGRAM_NAME)
   exit
 end
