@@ -62,12 +62,12 @@ end
 
 # check if necessary options have been given
 if nil == FlickRaw.api_key
-    puts "ERROR: API key not given."
-    exit
+  puts "ERROR: API key not given."
+  exit
 end
 if nil == FlickRaw.shared_secret
-    puts "ERROR: Shared secret not given."
-    exit
+  puts "ERROR: Shared secret not given."
+  exit
 end
 
 # if authentication credentials have not been given, make request for them
@@ -98,7 +98,7 @@ for pageNum in 1..photos.pages
     loc = flickr.photos.geo.getLocation(:"photo_id" => photo.id)
     latitude = loc["location"]["latitude"]
     longitude = loc["location"]["longitude"]
-    print latitude, ", ", longitude, "\n"                                         
+    print latitude, ", ", longitude, "\n"
   }
   photos = flickr.photos.getWithGeoData(:"per_page" => 500,
                                         :"page" => pageNum + 1)
