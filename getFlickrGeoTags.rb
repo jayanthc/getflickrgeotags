@@ -31,7 +31,6 @@ opts = GetoptLong.new(
   [ "--auth-secret",    "-e", GetoptLong::REQUIRED_ARGUMENT ]
 )
 
-
 FlickRaw.api_key = nil
 FlickRaw.shared_secret = nil
 
