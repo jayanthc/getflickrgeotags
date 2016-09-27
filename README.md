@@ -1,4 +1,4 @@
-# getFlickrGeoTags.rb
+### getFlickrGeoTags.rb
 
 `./getFlickrGeoTags.rb --api-key <api-key> --shared-secret <shared-secret>`
 
